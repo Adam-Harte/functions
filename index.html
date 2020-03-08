@@ -62,5 +62,29 @@
       calling a function inside a function or defining and retruning a function
       inside another.
     </p>
+    <h3>Callback Functions</h3>
+    <p>
+      Callback functions are functions defined as parameters of another function
+      which is then executed in that function body. This is a typical pattern
+      seen in event listeners and other browser APIs such as timers.
+    </p>
+    <h3>Bind</h3>
+    <p>
+      Bind is a method on the function object prototype and it takes in the
+      scope as the first argument and any argument thereafter are arguments you
+      want to change before function execution. Bind returns a new function with
+      the prepared altered arguments for execution. This is typically used to
+      handle this scope and to change parameters of a function that do similar
+      things rather than having to make multiple similar functions. We use bind
+      to change the arguments of a function that we ourselves do not execute but
+      another function for eample would as a callback.
+    </p>
+    <h3>Call and Apply</h3>
+    <p>
+      Call and Apply are similar to bind in that they are methods of the
+      function object prototype and allow you to change the scope and arguments
+      of a function. However call and apply immediately call the function ratehr
+      than return a new function to be executed later.
+    </p>
   </body>
 </html>

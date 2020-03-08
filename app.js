@@ -55,3 +55,25 @@ const add = (a, b) => {
 
 console.log(add(2, 7)(3));
 add(2, 7)(3);
+
+//callbacks
+const callbackFn = fn => {
+  fn();
+};
+
+callbackFn(() => console.log('callback'));
+
+//bind
+const sum = (a, b) => {
+  return a + b;
+}
+
+const displaySum = (fn, a, b) {
+  const result = fn(a, b);
+  console.log(result);
+}
+
+displaySum(sum.bind(this, 'hi', 'there'), 1, 4);
+displaySum(sum.bind(this, 2, 7), 3, 9);
+displaySum(sum.call(this, 2, 7), 3, 9);
+displaySum(sum.apply(this, 2, 7), 3, 9);
