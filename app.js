@@ -34,3 +34,10 @@ const arrFn = () => {
 setTimeout(() => {
   console.log('anonymous arrow function');
 }, 5000);
+
+//default arguments
+const defFn = (par1 = 'default param value') => {
+  console.log(par1);
+};
+
+defFn();
