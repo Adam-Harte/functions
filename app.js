@@ -13,3 +13,13 @@ const sayBye = function() {
 };
 
 sayBye();
+
+//anonymous functions
+const button = document.getElementById('btn');
+button.addEventListener('click', function() {
+  console.log('anonoymous function button click');
+});
+
+setTimeout(function() {
+  console.log('anonoymous function timeout');
+}, 3000);
