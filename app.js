@@ -46,3 +46,12 @@ defFn();
 const sumUp = (...args) => {
   return args.reduce((prev, cur) => prev + cur, 0);
 };
+
+//nested functions
+const add = (a, b) => {
+  const subtract = c => a + b - c;
+  return subtract;
+};
+
+console.log(add(2, 7)(3));
+add(2, 7)(3);
