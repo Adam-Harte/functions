@@ -23,3 +23,14 @@ button.addEventListener('click', function() {
 setTimeout(function() {
   console.log('anonoymous function timeout');
 }, 3000);
+
+//arrow functions
+//arrow function expresison
+const arrFn = () => {
+  console.log('arrow function expression');
+};
+
+//anonymous arrow functions
+setTimeout(() => {
+  console.log('anonymous arrow function');
+}, 5000);
