@@ -41,3 +41,8 @@ const defFn = (par1 = 'default param value') => {
 };
 
 defFn();
+
+//rest parameters
+const sumUp = (...args) => {
+  return args.reduce((prev, cur) => prev + cur, 0);
+};
